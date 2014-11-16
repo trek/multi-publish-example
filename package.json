@@ -1,0 +1,26 @@
+{
+  "name": "multibuild-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "devDependencies": {
+    "broccoli": "^0.13.3",
+    "broccoli-es6-module-transpiler": "^0.4.0",
+    "broccoli-funnel": "^0.1.6",
+    "broccoli-merge-trees": "^0.2.1",
+    "es6-module-transpiler-amd-formatter": "^0.2.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trek/multi-publish-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trek/multi-publish-example/issues"
+  },
+  "homepage": "https://github.com/trek/multi-publish-example"
+}
