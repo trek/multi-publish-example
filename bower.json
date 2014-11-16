@@ -1,0 +1,22 @@
+{
+  "name": "multi-publish-example",
+  "version": "0.0.0",
+  "homepage": "https://github.com/trek/multi-publish-example",
+  "authors": [
+    "Trek Glowacki <trek.glowacki@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
