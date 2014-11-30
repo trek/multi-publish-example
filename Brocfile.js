@@ -1,6 +1,7 @@
 var mergeTrees = require('broccoli-merge-trees');
 var compileModules = require('broccoli-es6-module-transpiler');
 var AMDFormatter = require('es6-module-transpiler-amd-formatter');
+var TarGzip = require('broccoli-targz');
 
 var cjsExport = compileModules('lib/', {
   formatter: 'commonjs',
@@ -17,4 +18,8 @@ var amdExport = compileModules('lib/', {
   output: 'amd'
 });
 
-module.exports = mergeTrees([cjsExport, globalsExport, amdExport]);
+zipCJS = new TarGzip(cjsExport, {name: 'cjs'});
+zipGlobals = new TarGzip(globalsExport, {name: 'globals'});
+zipAMD = new TarGzip(amdExport, {name: 'amd'});
+
+module.exports = mergeTrees([cjsExport, globalsExport, amdExport, zipCJS, zipGlobals, zipAMD]);
